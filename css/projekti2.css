@@ -1,0 +1,300 @@
+
+/* tyylittelyä */
+/* alhaalla luotu responsiivisuus 15.6" läppäreille */
+
+body {
+  max-width: 50%;
+  min-width: 230px;
+  background-image: url('../kuvat/2.jpg');
+  background-size: 100%;
+  font-family: 'Francois One', sans-serif;
+}
+
+table#theaters{
+  border : 1px solid black;
+  border-collapse: collapse;
+  width: 260px;
+  background-color: lemonchiffon;
+  box-shadow: 20px 0px 30px #888888;
+}
+
+table#theaters tr {
+  border : 1px solid black;
+  border-collapse: collapse;
+  width: 260px;
+  background-color: lemonchiffon;
+}
+
+table#theaters td { padding: 12px; }
+
+table#theaters td:hover { cursor: pointer; background-color: #FFCC00; }
+
+table#content {
+  border-collapse: collapse;
+  width: 1000px;
+  background-color: lemonchiffon;
+  box-shadow: 0px 0px 5px 5px #888888;
+  /*border : 1px solid black;*/
+}
+
+table#content:hover { background-color: #FFCC00; }
+
+th {
+  background-color: goldenrod;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px;
+}
+
+td { padding: 14px; }
+
+h2 { text-align: center; text-decoration: underline; margin-top: 1px; }
+
+a:hover { color: red; }
+
+#isoF:hover {
+  border: 0px;
+  cursor: help;
+}
+
+#kokonaisuus {
+  width: 1500px;
+  height: auto;
+  margin-left: 200px;
+  top: 40%;
+  right: 50%;
+  /*border: 1px solid green;*/
+}
+
+#theaters {  font-size: 120%;  width: 260px; margin-top: 1px; }
+
+#textField {
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 400px;
+  margin-top: 120px;
+  position: absolute;
+  height: auto;
+  width: 1000px;
+  font-size: 17px;
+  box-shadow: 20px 20px 20px #888888;
+  /* border: 1px solid red; */
+}
+
+#joku {
+  margin-top: 34px;
+  float:right;
+  width: 1160px;
+  margin-right: 20px;
+  height: 46px;
+  text-align: center;
+  /*border: 1px solid green;*/
+}
+
+#showHide {
+  width: 260px;
+  height: 40px;
+  cursor: pointer;
+  background-color: lemonchiffon;
+  border-radius: 4px;
+  font-size: 18px;
+  box-shadow: 10px 5px 20px #888888;
+}
+
+#showHide:hover { background-color: #FFCC00; }
+
+#home {
+  float:left;
+  height: 44px;
+  width: 260px;
+  border: 1px solid black;
+  font-size: 18px;
+  text-indent: 8px;
+  text-align: left;
+  opacity: 0.4;
+}
+
+#home:hover {
+  background-color:#FFCC00;
+  cursor: pointer;
+  opacity: 1;
+  color: red;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* responsiivisuus 15.6" läppäreille */
+@media (max-width: 1367px) {
+
+#kokonaisuus { margin-left: 30px; }
+
+#textField {
+  margin-left: 450px;
+  margin-top: 88px;
+  width: 680px;
+  height: auto;
+}
+
+#home {
+  float:left;
+  height: 44px;
+  width: 260px;
+  border: 1px solid black;
+  font-size: 18px;
+  text-indent: 8px;
+  text-align: left;
+  opacity: 0.4;
+}
+
+#home:hover {
+  background-color:#FFCC00;
+  cursor: pointer;
+  opacity: 1;
+  color: red;
+}
+
+#showHide {
+  margin-left: 160px;
+  width: 260px;
+  height: 40px;
+  cursor: pointer;
+  background-color: lemonchiffon;
+  border-radius: 4px;
+  font-size: 18px;
+  box-shadow: 10px 5px 20px #888888;
+}
+
+#joku { width: 778px; margin-right: 400px; }
+
+table#content {
+  border-collapse: collapse;
+  width: 680px;
+}
+
+table#content th,td { border-collapse: collapse; }
+iframe { width: 337px; height: 180px; }
+img#ohjelmisto { width: 680px; height: 220px; }
+h2 { margin-left: 160px; }
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* responsiivisuus ?? läppäreille */
+@media (max-width: 1200px) {
+
+#kokonaisuus { margin-left: 20px; }
+
+#textField {
+  margin-left: 400px;
+  margin-top: 88px;
+  width: 680px;
+  height: auto;
+}
+
+#home {
+  float:left;
+  height: 44px;
+  width: 260px;
+  border: 1px solid black;
+  font-size: 18px;
+  text-indent: 8px;
+  text-align: left;
+  opacity: 0.4;
+}
+
+#home:hover {
+  background-color:#FFCC00;
+  cursor: pointer;
+  opacity: 1;
+  color: red;
+}
+
+#showHide {
+  margin-left: 70px;
+  width: 260px;
+  height: 40px;
+  cursor: pointer;
+  background-color: lemonchiffon;
+  border-radius: 4px;
+  font-size: 18px;
+  box-shadow: 10px 5px 20px #888888;
+}
+
+#joku { width: 778px; margin-right: 400px; }
+
+table#content {
+  border-collapse: collapse;
+  width: 680px;
+}
+
+table#content th,td { border-collapse: collapse; }
+iframe { width: 337px; height: 180px; }
+img#ohjelmisto { width: 680px; height: 220px; }
+h2 { margin-left: 80px; }
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* responsiivisuus ?? läppäreille */
+@media (max-width: 1550px) {
+
+#kokonaisuus { margin-left: 120px; }
+
+#textField {
+  margin-left: 400px;
+  margin-top: 88px;
+  width: 680px;
+  height: auto;
+}
+
+#home {
+  float:left;
+  height: 44px;
+  width: 260px;
+  border: 1px solid black;
+  font-size: 18px;
+  text-indent: 8px;
+  text-align: left;
+  opacity: 0.4;
+}
+
+#home:hover {
+  background-color:#FFCC00;
+  cursor: pointer;
+  opacity: 1;
+  color: red;
+}
+
+#showHide {
+  margin-left: 70px;
+  width: 260px;
+  height: 40px;
+  cursor: pointer;
+  background-color: lemonchiffon;
+  border-radius: 4px;
+  font-size: 18px;
+  box-shadow: 10px 5px 20px #888888;
+}
+
+#joku { width: 778px; margin-right: 400px; }
+
+table#content {
+  border-collapse: collapse;
+  width: 680px;
+}
+
+table#content th,td { border-collapse: collapse; }
+iframe { width: 337px; height: 180px; }
+img#ohjelmisto { width: 680px; height: 220px; }
+h2 { margin-left: 80px; }
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* responsiivisuus puhelimelle */
+@media (max-width: 768px) {
+}

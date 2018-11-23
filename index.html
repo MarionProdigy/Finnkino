@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Finnkinon elokuvateatterit</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontti googlefontsilta -->
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/projekti2.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="kuvat/favicon.jpg" />
+
+</head>
+
+<body>
+
+  <div id="kokonaisuus">
+    <div id="joku"><h2>On Going Movies: </h2>
+      <button id="showHide">Show Movies / Hide Movies</button>
+    </div><br><br>
+    <div id="textField"><img id ="ohjelmisto" src="kuvat/1.jpg" alt="Ohjelmisto" width="1000" height="300" border="10"><br><br>
+      <!-- tuodaan muutama video Youtubesta etusivulle -->
+      <iframe width="497" height="320" src="https://www.youtube.com/embed/9TUVNqywQTw" style="border: 3px solid goldenrod;" frameborder="0" allowfullscreen></iframe>
+      <iframe width="498" height="320" src="https://www.youtube.com/embed/lH-neqcYSxs" style="border: 3px solid goldenrod;" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <table id="theaters"></table>
+    <button id ="home" onclick ="home()" >Refresh Page<span class="glyphicon glyphicon-refresh"></button>
+    <!-- kutsutaan JavaScript-tiedostoa -->
+    <script src="javaScript/projekti2.js"></script>
+    <!-- for Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  </div>
+
+</body>
+</html>
